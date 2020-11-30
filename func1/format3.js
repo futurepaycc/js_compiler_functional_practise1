@@ -16,7 +16,7 @@ const second_str  = dateStr |> R.split(" ") |> R.last |> R.split(":") |> R.last
 /* 
 修改对象: R.assoc('name','jack',person)
 https://randycoulman.com/blog/2016/06/28/thinking-in-ramda-immutability-and-objects/
-Date对象不行,应该需要使用date-fp
+Date对象不行,应该需要使用date-fp, R.call可以作用于没有副作用的函数，如: R.call(Math.abs,-1)
 https://github.com/cullophid/date-fp
 */
 

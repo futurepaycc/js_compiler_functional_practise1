@@ -1,4 +1,4 @@
-// ---------------------------------------------------------------------https://github.com/tc39/proposal-pipeline-operator/
+// https://github.com/tc39/proposal-pipeline-operator/
 let person = { score: 25 };
 
 function double (x) { return x + x; }
