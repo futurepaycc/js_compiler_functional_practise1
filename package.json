@@ -20,6 +20,8 @@
     "js-pattern-matching": "^0.2.0"
   },
   "dependencies": {
-    "dotenv": "8.2.0"
+    "date-fp": "^5.0.3",
+    "dotenv": "8.2.0",
+    "ramda": "^0.27.1"
   }
 }
