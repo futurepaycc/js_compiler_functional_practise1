@@ -1,0 +1,8 @@
+*.lock
+.*
+!.gitignore
+
+
+.env
+
+node_modules/
