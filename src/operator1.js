@@ -1,3 +1,5 @@
+'babel-operator-overload-plugin enabled'
+
 //https://github.com/rob-blackbourn/babel-operator-overload-plugin
 class Point {
     constructor(x, y) {

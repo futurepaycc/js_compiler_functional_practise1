@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "babel-node src/index.js",
     "test": "echo \"No test specified\" && exit 0"
@@ -23,6 +24,7 @@
   "dependencies": {
     "date-fp": "^5.0.3",
     "dotenv": "8.2.0",
-    "ramda": "^0.27.1"
+    "ramda": "^0.27.1",
+    "z": "^1.0.9"
   }
 }

@@ -1,0 +1,2 @@
+jison:
+	jison ${sourcename}.jison
