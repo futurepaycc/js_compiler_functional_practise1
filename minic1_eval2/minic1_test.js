@@ -11,9 +11,11 @@ def c(z) z+z;
 
 /* 目标: 解释下面代码
 TODO:
-1. 单main函数解释
-2. 多函数解释
-3. 全局、局变量解释
+1. 变量寻找父符号表
+2. 函数内调用函数
+3. 单调用语句
+4. 代码重构、去除重复
+5. 类型处理
 
 下一步:
     解释程序
@@ -35,11 +37,12 @@ int main(a){
 
 
 
-//p1: 函数参数列表
+//p1: 函数参数列表: NOTE: 暂不支持sum(a,b);不赋值语句
 source=`int main(int a, int b){
-    int result = sum(a,b);
     return a + b;
-}`
+}
+int result = main(10,20);
+`
 
 import { Parser as minic1_Parser } from "./minic1.js";
 import { evalution as minic1_evalution } from "./minic1_eval.js";

@@ -99,7 +99,7 @@ case 9:
 this.$={type:"St_Assign",v_name:$$[$0-3],v_type:$$[$0-4],value:$$[$0-1]}
 break;
 case 10:
-this.$={type:"St_call",func_name:$$[$0-3],Expr_call:$$[$0-1]}
+this.$={type:"St_call",v_name:$$[$0-3],v_type:$$[$0-4],Expr_call:$$[$0-1]}
 break;
 case 11:
 this.$={type:"St_return",St_return_item:$$[$0-1]}

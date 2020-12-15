@@ -60,7 +60,7 @@ St_Assign: TYPE ID '=' Expr ';' {$$={type:"St_Assign",v_name:$2,v_type:$1,value:
         ;
 
 /* 语句：函数调用 */
-St_call: TYPE ID '=' Expr_call ';' {$$={type:"St_call",func_name:$2,Expr_call:$4}}
+St_call: TYPE ID '=' Expr_call ';' {$$={type:"St_call",v_name:$2,v_type:$1,Expr_call:$4}}
         ;
 
 /* 语句: 函数返回 */
