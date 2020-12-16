@@ -9,6 +9,10 @@ TODO:
 3. 单调用语句
 4. 代码重构、去除重复
 5. 类型处理
+6. toplevel: 自身可以看做一个函数, 这样可以实现函数嵌套和closure
+7. 语义检查: 可以看做是解析符号表，而不求值
+8. 代码生成: 基础也是表达式求值，生成对应正面的vm结构
+9. vm: 表达式求值、label -> function, 对应就是栈、jump、ret
 */
 function exec_function(Function_node,topSymTable,arg_list){
   const symTable = new Map();
