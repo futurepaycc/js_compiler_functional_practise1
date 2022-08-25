@@ -1,0 +1,17 @@
+{
+  "name": "minic1_eval2",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "minic1.js",
+  "dependencies": {
+    "jison": "^0.4.18",
+    "js-pattern-matching": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -22,6 +22,11 @@ function exec_function(Function_node,topSymTable,arg_list){
     symTable.set(item.name,{value:parseInt(arg_list[index])}); //NOTE:这里缺类型判断
   })
 
+/* 
+表达式解释算法:
+1. 基础符号，值替换
+2. 二元表达式，递归解析
+*/
   function eval_Expr(Expr_node) {//解释执行ast
       switch (Expr_node.type) {
           case "ID": return symTable.get(Expr_node.value).value;
@@ -45,6 +50,9 @@ function exec_function(Function_node,topSymTable,arg_list){
       return result;
   }
 
+/* 
+函数体解析
+*/
   function eval_Funcbody(Func_body) {
       let result = 0;
       Func_body.Func_body_Stmt_list.forEach(node=>match(node.type)(

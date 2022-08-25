@@ -44,9 +44,9 @@ source=`int main(int a, int b){
 int result = main(10,20);
 `
 
-import { Parser as minic1_Parser } from "./minic1.js";
+import { Parser } from "./minic1.js";
 import { evalution as minic1_evalution } from "./minic1_eval.js";
-const minic1_parser = new minic1_Parser();
+const minic1_parser = new Parser();
 result = minic1_parser.parse(source)
 pp(result)
 minic1_evalution(result)
